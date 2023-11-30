@@ -118,10 +118,18 @@ header {
     display: block;
 }
 
-.productInfos p {
+.available {
     text-align: center;
-    color: #b2bec3;
+    color: green;
     padding-top: 0 8px;
+    font-weight: bold;
+}
+
+.unavailable {
+    text-align: center;
+    color: red;
+    padding-top: 0 8px;
+    font-weight: bold;
 }
 
 .productInfos h6 {
@@ -140,3 +148,4 @@ header {
     width: 35px;
     height: auto;
 }
+
