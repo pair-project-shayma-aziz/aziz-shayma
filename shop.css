@@ -149,3 +149,77 @@ header {
     height: auto;
 }
 
+.checkoutbox {
+    width: 20vw;
+    margin: 15px;
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    border-radius: 20px;
+    padding-top: 10px;
+    box-shadow: 0 8px 10px rgba(157, 157, 157, 20);
+    transition: .4s;
+    background: #ffffff;
+    margin-left: 60%;
+    margin-top: 10%;
+    position: absolute;
+    height: 15vh;
+    overflow-y: auto;
+    max-height: 600px;
+}
+
+.cartproduct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.checkoutbutton {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px 10%;
+    
+}
+
+.cartproduct {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10%;
+}
+
+.checkoutbutton {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding: 20px 10%;
+    
+}
+
+#trash {
+    width: 2px;
+}
+
+#text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 25pt;
+}
+
+.button {
+    background-color: rgb(243, 135, 4);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#deleteall {
+    height: 40px;
+    color: #2c2c2c;
+}

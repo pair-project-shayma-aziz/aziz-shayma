@@ -24,7 +24,24 @@
         <div class="icons">
             <a href="#"><img src="../assets/search-icon.png" alt="search-icon"></a>
             <a href="#"><img src="../assets/user-icon.png" alt="user-icon"></a>
-            <a href="#"><img src="../assets/cart-icon.png" alt="cart-icon"></a>
+            <a href="#"><img id="menucart" src="../assets/cart-icon.png" alt="cart-icon"></a>
+        </div>
+
+
+        <div class="checkoutbox">
+            <div class="productlist">
+                <div id="cartproduct" class="cartproduct">
+                    <div id="text">
+                        <p id="productname"></p>
+                        <p id="productprice"></p>
+                    </div>
+                    <div id="trash"></div>                                                       
+                </div>
+                <div class="checkoutbutton">
+                    <img id="deleteall" src="../assets/trash-icon.png" alt="">
+                    <button class="button">Checkout</button>                    
+                </div>
+            </div>
         </div>
 
 
@@ -33,47 +50,47 @@
     <section class="product-page">
         <div class="productInfos">
             <img class="product" src="../assets/phone1.webp" alt="">
-            <h3>Smartphone Samsung S21<br>ULTRA SILVER</h3>
-            <p class="available">Available</p>
+            <h3 id="namephone1"></h3>
+            <p id="stockphone1" class="available"></p>
             <div>
-                <h6>4599 TND</h6>
-                <img class="addToCard" src="../assets/cart-icon.png" alt="">
+                <h6 id="pricephone1"></h6>
+                <img class="addToCart" onclick="addtocart(product1)" src="../assets/cart-icon.png" alt="" >                         
             </div>
         </div>
-    
+        <button onclick='addtocart(product1)'> addi</button>
         <div class="productInfos">
             <img class="product" src="../assets/phone2.jpg" alt="">
-            <h3>Smartphone OPPO RENO 8T<br>5G 8G 256G - Noir</h3>
-            <p class="available">Available</p>
+            <h3 id="namephone2"></h3>
+            <p id="stockphone2" class="available"></p>
             <div>
-                <h6>1799 TND</h6>
-                <img class="addToCard" src="../assets/cart-icon.png" alt="">
+                <h6 id="pricephone2"></h6>
+                <img class="addToCart" onclick="addtocart(product2)" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
-    
+
         <div class="productInfos">
             <img class="product" src="../assets/phone3.webp" alt="">
-            <h3>IPHONE 14 PRO MAX<br>512GO SPACE BLACK</h3>
-            <p class="unavailable">Unavailable</p>
+            <h3 id="namephone3"></h3>
+            <p id="stockphone3" class="unavailable"></p>
             <div>
-                <h6>7999 TND</h6>
-                <img class="addToCard" src="../assets/cart-icon.png" alt="">
+                <h6 id="pricephone3"></h6>
+                <img class="addToCart" onclick="addtocart(product3)" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
-    
+
         <div class="productInfos">
             <img class="product" src="../assets/phone4.webp" alt="">
-            <h3>IPHONE 14 PRO<br>256GO GOLD</h3>
-            <p class="available">Available</p>
+            <h3 id="namephone4"></h3>
+            <p id="stockphone4" class="available"></p>
             <div>
-                <h6>6899 TND</h6>
-                <img class="addToCard" src="../assets/cart-icon.png" alt="">
+                <h6 id="pricephone4"></h6>
+                <img class="addToCart" onclick="addtocart(product4)" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
     </section>
-    
+ 
 
     <script src='https://code.jquery.com/jquery-2.2.4.js'></script>
-    <script src="shop.js"></script>
+    <script src="../shop.js"></script>
 </body>
 </html>
