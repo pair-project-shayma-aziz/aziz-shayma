@@ -24,7 +24,25 @@
         <div class="icons">
             <a href="#"><img src="../assets/search-icon.png" alt="search-icon"></a>
             <a href="#"><img src="../assets/user-icon.png" alt="user-icon"></a>
-            <a href="#"><img src="../assets/cart-icon.png" alt="cart-icon"></a>
+            <a href="#"><img class="menucart" src="../assets/cart-icon.png" alt="cart-icon"></a>
+        </div>
+        <div class="checkoutbox">
+            <div class="productlist">
+                <div id="cartproduct" class="cartproduct">
+                    <div id="text">
+                        <p id="productname"></p>
+                        <p id="productprice"></p>
+                    </div>
+                    <div id="trash"></div>                                                       
+                </div>
+         <div id="total"> </div>
+                
+                <div class="checkoutbutton">
+                    <img id="deleteall" src="../assets/trash-icon.png" alt="">
+                    <button class="button">Checkout</button>                    
+                </div>
+                
+            </div>
         </div>
 
 
@@ -37,7 +55,7 @@
             <p id="stocklaptop1" class="available"></p>
             <div>
                 <h6 id="pricelaptop1"></h6>
-                <img class="addToCart" onclick="addtocart(product1)" src="../assets/cart-icon.png" alt="" >
+                <img class="addToCart" onclick="{addtocart(product13) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
     
@@ -47,7 +65,7 @@
             <p id="stocklaptop2" class="available"></p>
             <div>
                 <h6 id="pricelaptop2"></h6>
-                <a href="../html files/addtocart.html"><img class="addToCart" src="../assets/cart-icon.png" alt="" onclick=""></a>
+                <img class="addToCart" onclick="{addtocart(product14) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
 
         </div>
@@ -58,7 +76,7 @@
             <p id="stocklaptop3" class="unavailable"></p>
             <div>
                 <h6 id="pricelaptop3"></h6>
-                <a href="../html files/addtocart.html"><img class="addToCart" src="../assets/cart-icon.png" alt="" onclick=""></a>
+                <img class="addToCart" onclick="{addtocart(product15) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
     
@@ -68,7 +86,7 @@
             <p id="stocklaptop4" class="available"></p>
             <div>
                 <h6 id="pricelaptop4"></h6>
-                <a href="../html files/addtocart.html"><img class="addToCart" src="../assets/cart-icon.png" alt="" onclick=""></a>
+                <img class="addToCart" onclick="{addtocart(product16) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
     </section>

@@ -24,7 +24,25 @@
         <div class="icons">
             <a href="#"><img src="../assets/search-icon.png" alt="search-icon"></a>
             <a href="#"><img src="../assets/user-icon.png" alt="user-icon"></a>
-            <a href="#"><img src="../assets/cart-icon.png" alt="cart-icon"></a>
+            <a href="#"><img class="menucart" src="../assets/cart-icon.png" alt="cart-icon"></a>
+        </div>
+        <div class="checkoutbox">
+            <div class="productlist">
+                <div id="cartproduct" class="cartproduct">
+                    <div id="text">
+                        <p id="productname"></p>
+                        <p id="productprice"></p>
+                    </div>
+                    <div id="trash"></div>                                                       
+                </div>
+         <div id="total"> </div>
+                
+                <div class="checkoutbutton">
+                    <img id="deleteall" src="../assets/trash-icon.png" alt="">
+                    <button class="button">Checkout</button>                    
+                </div>
+                
+            </div>
         </div>
 
 
@@ -37,7 +55,7 @@
             <p id="stockConsole1" class="available"></p>
             <div>
                 <h6 id="priceConsole1"></h6>
-                <a href="../html files/addtocart.html"><img class="addToCart" src="../assets/cart-icon.png" alt="" onclick=""></a>
+                <img class="addToCart" onclick="{addtocart(product9) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
 
@@ -47,7 +65,7 @@
             <p id="stockConsole2" class="available"></p>
             <div>
                 <h6 id="priceConsole2"></h6>
-                <a href="../html files/addtocart.html"><img class="addToCart" src="../assets/cart-icon.png" alt="" onclick=""></a>
+                <img class="addToCart" onclick="{addtocart(product10) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
 
@@ -57,7 +75,7 @@
             <p id="stockConsole3" class="unavailable"></p>
             <div>
                 <h6 id="priceConsole3"></h6>
-                <a href="../html files/addtocart.html"><img class="addToCart" src="../assets/cart-icon.png" alt="" onclick=""></a>
+                <img class="addToCart" onclick="{addtocart(product11) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
 
@@ -67,7 +85,7 @@
             <p id="stockConsole4" class="available"></p>
             <div>
                 <h6 id="priceConsole4"></h6>
-                <a href="../html files/addtocart.html"><img class="addToCart" src="../assets/cart-icon.png" alt="" onclick=""></a>
+                <img class="addToCart" onclick="{addtocart(product12) ,sum()}" src="../assets/cart-icon.png" alt="" >
             </div>
         </div>
     </section>

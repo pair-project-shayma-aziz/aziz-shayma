@@ -123,33 +123,37 @@ pushh(product18)
 pushh(product19)
 pushh(product20)
 
+var productlist=[]
+var productlistname=[]
+
 function addtocart(product){
-    var productname=  $("#productname").append(`<p>${product.name}</p>` )
-    var productname=  $("#productprice").append(`<p>${product.price}</p> `)
-    var productname=  $('#trash').prepend('<img id="deleteproduct" src="file:///C:/Users/shdri/OneDrive/Bureau/aziz-shayma/assets/trash-icon.png" />')
-    productlist.push(productname)
-    console.log(productlist)
+    $("#productname").append(`<p>${product.name}</p>` )
+    $("#productprice").append(`<p>${product.price}</p> `)
+    $('#trash').prepend('<img id="deleteproduct" src="file:///C:/Users/shdri/OneDrive/Bureau/aziz-shayma/assets/trash-icon.png" />')
+    productlist.push(product.price)
+    productlistname.push(product.name)
+
 }
-$("#menucart").click(function() {
+$(".menucart").click(function() {
     $('.checkoutbox').toggle();
 })
 
 $("#deleteall").click(function() {
     $('#cartproduct').remove();
+    $('#total').remove();
 })
 
-function deleteproduct(){
-    
 
-}
 
-function sum() {
-    var montant = 0;
-    for (var i = 0; i < array.length; i++) {
-        var x = $("#p2").val();
-        var y = eval(x);
-        $("#p2").val(y);
-        montant = montant + y;
+
+
+function sum(){
+    var montant=0
+    for(var i=0;i<productlist.length;i++){
+        var y=parseInt(productlist[i])
+        montant=montant+y
     }
-    $("#result").text("Result: " + montant);
+    $("#total").empty()
+    $("#total").append(`<p>${montant}</p>`)
 }
+
